@@ -1,5 +1,5 @@
-public class AccountRepository {
-    public void save(BankAccount account) {
-        System.out.println("Saving account to database");
-    }
+public interface AccountRepository {
+    void save(BankAccount account);
+
+    BankAccount findByAccountNumber(String accountNumber);
 }
