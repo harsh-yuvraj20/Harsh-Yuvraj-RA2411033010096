@@ -26,5 +26,7 @@ public class Main {
         NotificationService smsNotificationService = new SMSNotificationService();
         Bank smsBank = new Bank(smsNotificationService);
         smsBank.sendNotification("SMS notification service can be substituted.");
+
+        LspDemonstration.run();
     }
 }
